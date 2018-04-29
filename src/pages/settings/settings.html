@@ -14,5 +14,13 @@
 
 
 <ion-content padding>
+    <ion-list>
+        <button menuClose ion-item *ngFor="let p of pages" (click)="changeTheme(p.theme)">
+            <ion-avatar  item-start>
+               <img [src]="p.color"/>
+              </ion-avatar>
+          {{p.title}}
+        </button>
+      </ion-list>
 
 </ion-content>
