@@ -1,0 +1,29 @@
+<!-- Wrapper over the app which will use the theming-->
+<div class="{{global.state['theme']}}">
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      
+       
+      <button menuClose ion-item *ngFor="let p of pages" (click)="changeTheme(p.theme)">
+          <ion-avatar  item-start>
+             <img [src]="p.color"/>
+            </ion-avatar>
+        {{p.title}}
+      </button>
+    </ion-list>
+   
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+</div>
