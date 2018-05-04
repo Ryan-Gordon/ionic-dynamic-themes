@@ -19,7 +19,7 @@ export class AppState{
     }
 
     set(prop:string,value:any){
-        //simple object setting
+        //update the specified state property with the value
         return this._state[prop] = value;
     }
 }

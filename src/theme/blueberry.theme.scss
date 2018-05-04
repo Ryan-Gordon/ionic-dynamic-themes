@@ -1,0 +1,49 @@
+.theme-blueberry {
+    // From here to the next checkpoint is for theming the header - toolbar navbar but not the main content 
+    transition: all 1.1s ease;
+    background-color: #1E88E5;
+    p,
+    .toolbar-title,
+    .bar-button-default,
+    body,
+    div {
+      transition: all 1.1s ease;
+      color: black;
+    }
+    .onboard {
+      border-color: #1E88E5 !important;
+    }
+    .toolbar-background,
+    .toggle-checked {
+      transition: all 1.1s ease;
+      background-color: #1E88E5 !important;
+    }
+
+    //From here is where the main content is modified, this includes the backgorund of the page, ion-items and more
+/*
+    ion-content,
+    .input-wrapper,
+    .item-inner,
+    .item,
+    ion-footer,
+    ion-item,
+    ion-label {
+      transition: all 1.1s ease;
+      background-color: #1E88E5 !important;
+      background: #1E88E5 !important;
+      color: white !important;
+    }
+    ion-list {
+      background-color: #1E88E5;
+    }
+    .time {
+      background-color: white;
+    }
+    .item {
+      transition: all 1s ease;
+      background-color: #1E88E5;
+      color: white;
+    }
+    */
+    
+}

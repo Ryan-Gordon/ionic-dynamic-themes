@@ -14,16 +14,18 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, theme: string,color: string}>;
+  themes: Array<{title: string, theme: string,color: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, 
               public splashScreen: SplashScreen, public global:AppState) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Default Red Theme', theme: 'theme-red', color:'assets/imgs/FF0000.png' },
-      { title: 'Noir Theme', theme: 'theme-noir', color:'assets/imgs/333333.png' }
+    this.themes = [
+      { title: 'Default Red', theme: 'theme-red', color:'assets/imgs/FF0000.png' },
+      { title: 'Noir', theme: 'theme-noir', color:'assets/imgs/333333.png' },
+      { title: 'Clover', theme: 'theme-clover', color:'assets/imgs/388E3C.png' },
+      { title: 'Blueberry', theme: 'theme-blueberry', color:'assets/imgs/1e88e5.png' }
     ];
 
   }
@@ -35,12 +37,6 @@ export class MyApp {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
-  }
-
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
   }
 
   changeTheme(theme:any){
