@@ -11,4 +11,9 @@ export class HomePage {
 
   }
 
+  openSettingsPage(){
+    this.navCtrl.push('SettingsPage');
+    
+  }
+
 }

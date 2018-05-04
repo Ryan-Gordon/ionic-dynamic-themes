@@ -5,3 +5,5 @@ resources
 www
 .editorconfig
 package-lock.json
+*.map
+*.map

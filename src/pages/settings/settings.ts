@@ -25,10 +25,11 @@ export class SettingsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
   private global:AppState) {
-    // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Default Red Theme', theme: 'theme-red', color:'assets/imgs/FF0000.png' },
-      { title: 'Noir Theme', theme: 'theme-noir', color:'assets/imgs/333333.png' }
+      { title: 'Default Red', theme: 'theme-red', color:'assets/imgs/FF0000.png' },
+      { title: 'Noir', theme: 'theme-noir', color:'assets/imgs/333333.png' },
+      { title: 'Clover', theme: 'theme-clover', color:'assets/imgs/388E3C.png' },
+      { title: 'Blueberry', theme: 'theme-blueberry', color:'assets/imgs/1e88e5.png' }
     ];
   }
 
@@ -42,5 +43,7 @@ export class SettingsPage {
     console.log("Now Changing theme to "+ theme);
     this.global.set('theme', theme);
   }
+
+  
 
 }

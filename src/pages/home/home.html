@@ -4,15 +4,25 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
+
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSettingsPage()">
+        <ion-icon name="cog"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3>Ionic Dynamic Themeing</h3>
+  <p>
+    Some of the themes in the sidemenu affect the navbar only, to make them affect all elements, remove the commented SCSS code in the relevant file
+  </p>
 
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
-
+  
   <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>
