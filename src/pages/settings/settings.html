@@ -14,6 +14,7 @@
 
 
 <ion-content padding>
+  <p>Choose from one of the colour themes here or....</p>
     <ion-list>
         <button menuClose ion-item *ngFor="let p of pages" (click)="changeTheme(p.theme)">
             <ion-avatar  item-start>
@@ -22,5 +23,8 @@
           {{p.title}}
         </button>
       </ion-list>
+      <p>Click this button to see an example in a modal</p>
+      <button ion-item (click)="openThemeModal()">Open Theme page</button>
+
 
 </ion-content>

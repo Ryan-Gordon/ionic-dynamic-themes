@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {ModalProvider} from '../../providers/modal/modal';
 
 //App State class can be accessed from within  a page too 
 
@@ -24,7 +24,7 @@ export class SettingsPage {
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-  private global:AppState) {
+  private global:AppState, public modal:ModalProvider) {
     this.pages = [
       { title: 'Default Red', theme: 'theme-red', color:'assets/imgs/FF0000.png' },
       { title: 'Noir', theme: 'theme-noir', color:'assets/imgs/333333.png' },
@@ -42,6 +42,9 @@ export class SettingsPage {
   changeTheme(theme:any){
     console.log("Now Changing theme to "+ theme);
     this.global.set('theme', theme);
+  }
+  openThemeModal(){
+    this.modal.presentThemeModal();
   }
 
   
