@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+#Ignore some SCSS files for Githubs Linguist
+src/app/theme/* linguist-vendored
