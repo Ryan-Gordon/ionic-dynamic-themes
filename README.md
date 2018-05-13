@@ -1,7 +1,7 @@
 # ionic-dynamic-themes
 
 
-This repository was developed as a part of a medium post which you can [find here](https://medium.com/@ryangordon210/dynamically-theming-your-ionic-application-like-todoist-ffa17e15dbf7) if you want to run through it.
+This repository was developed as a part of a medium post which you can [find here](https://medium.freecodecamp.org/how-to-dynamically-theme-your-ionic-application-and-make-your-users-happy-ffa17e15dbf7) if you want to run through it.
 
 
 There are 3 examples of how to use this dynamic theming in your own projects! These are :  
