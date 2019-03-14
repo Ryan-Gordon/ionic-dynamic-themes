@@ -1,4 +1,5 @@
 # ionic-dynamic-themes
+[![HitCount](http://hits.dwyl.io/Ryan-Gordon/ionic-dynamic-themes.svg)](http://hits.dwyl.io/Ryan-Gordon/ionic-dynamic-themes)
 
 
 This repository was developed as a part of a medium post which you can [find here](https://medium.freecodecamp.org/how-to-dynamically-theme-your-ionic-application-and-make-your-users-happy-ffa17e15dbf7) if you want to run through it.
